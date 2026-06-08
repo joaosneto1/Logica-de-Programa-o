@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Ex6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double compra, desconto = 0, total;
+
+        System.out.print("Digite o valor da compra: ");
+        compra = sc.nextDouble();
+
+        if (compra > 500) {
+            desconto = compra * 0.10;
+        }
+
+        total = compra - desconto;
+
+        System.out.println("Desconto: R$ " + desconto);
+        System.out.println("Valor final: R$ " + total);
+
+        sc.close();
+    }
+}
