@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int A, B, C;
+
+        System.out.print("Digite A: ");
+        A = sc.nextInt();
+
+        System.out.print("Digite B: ");
+        B = sc.nextInt();
+
+        if (A == B) {
+            C = A + B;
+        } else {
+            C = A * B;
+        }
+
+        System.out.println("Valor de C: " + C);
+
+        sc.close();
+    }
+}
