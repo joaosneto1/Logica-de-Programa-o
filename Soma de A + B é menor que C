@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Ex1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int A, B, C;
+
+        System.out.print("Digite A: ");
+        A = sc.nextInt();
+
+        System.out.print("Digite B: ");
+        B = sc.nextInt();
+
+        System.out.print("Digite C: ");
+        C = sc.nextInt();
+
+        if (A + B < C) {
+            System.out.println("A soma de A + B é menor que C.");
+        } else {
+            System.out.println("A soma de A + B não é menor que C.");
+        }
+
+        sc.close();
+    }
+}
